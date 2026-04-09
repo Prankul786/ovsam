@@ -1,34 +1,4 @@
-# Open-Vocabulary SAM [ECCV-2024]
 
-[Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
-[Xiangtai Li<sup>1</sup>](https://lxtgh.github.io), 
-[Chong Zhou<sup>1</sup>](https://chongzhou96.github.io), 
-[Yining Li<sup>2</sup>](https://scholar.google.com/citations?user=y_cp1sUAAAAJ), 
-[Kai Chen<sup>2</sup>](https://chenkai.site), 
-[Chen Change Loy<sup>1</sup>](https://www.mmlab-ntu.com/person/ccloy/). 
-
-[<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/), 
-[<sup>2</sup>Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)
-
-[![arXiv](https://img.shields.io/badge/arXiv-2401.02955-b31b1b.svg)](https://arxiv.org/abs/2401.02955)
-[![Project Page](https://img.shields.io/badge/OVSAM-Project%20Page-green)](https://www.mmlab-ntu.com/project/ovsam)
-[![HuggingFace Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-App-blue)](https://huggingface.co/spaces/HarborYuan/ovsam)
-[![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Open-Vocabulary_SAM)
-
-
-# RWKV-SAM [Arxiv](https://arxiv.org/abs/2406.19369)
-
-[Haobo Yuan<sup>1</sup>](https://yuanhaobo.me), 
-[Xiangtai Li<sup>2,1</sup>](https://lxtgh.github.io), 
-[Tao Zhang<sup>2</sup>](https://zhang-tao-whu.github.io/), 
-[Lu Qi<sup>3</sup>](http://luqi.info/), 
-[Ming-Hsuan Yang<sup>3</sup>](http://faculty.ucmerced.edu/mhyang/), 
-[Shuicheng Yan<sup>2</sup>](https://yanshuicheng.info/), 
-[Chen Change Loy<sup>1</sup>](https://www.mmlab-ntu.com/person/ccloy/).
-
-[<sup>1</sup>S-Lab, Nanyang Technological University](https://www.mmlab-ntu.com/),
-[<sup>2</sup>SkyworkAI]()
-[<sup>3</sup>UC Merced]()
 
 
 ## 📰 News
@@ -147,40 +117,7 @@ CLIP2SAM training:
 bash tools/dist.sh train seg/configs/clip2sam/clip2sam_coco_rn50x16.py 8
 ```
 
-## 🏃‍♀️Inference
-```commandline
-bash tools/dist.sh test seg/configs/ovsam/ovsam_coco_rn50x16_point.py 8
-```
-Please refer to [🤗Hugging Face](https://huggingface.co/HarborYuan/ovsam_models) to get the pre-trained weights:
-```commandline
-git clone https://huggingface.co/HarborYuan/ovsam_models models
-```
-
-## RWKV-SAM
-
-See [readme.md](./projects/rwkvsam/README.md) for the details.
 
 
-## 📚 Citation
-
-If you think our codebases and works are useful for your research, please consider referring us:
 
 
-```bibtex
-@inproceedings{yuan2024ovsam,
-    title={Open-Vocabulary SAM: Segment and Recognize Twenty-thousand Classes Interactively},
-    author={Yuan, Haobo and Li, Xiangtai and Zhou, Chong and Li, Yining and Chen, Kai and Loy, Chen Change},
-    booktitle={ECCV},
-    year={2024}
-}
-
-@article{yuan2024mamba,
-  title={Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model},
-  author={Yuan, Haobo and Li, Xiangtai and Qi, Lu and Zhang, Tao and Yang, Ming-Hsuan and Yan, Shuicheng and Loy, Chen Change},
-  journal={arXiv preprint},
-  year={2024}
-}
-```
-## License <a name="license"></a>
-
-This project is licensed under <a rel="license" href="https://github.com/HarborYuan/ovsam/blob/master/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
